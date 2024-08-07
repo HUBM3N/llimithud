@@ -1,0 +1,24 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/replay/thumbnails/animated2"
+	"$translucent" 1
+	"$vertexcolor" 1
+	"$no_fullbright" 1
+	"$ignorez" 1
+	"$speed" 1
+    //  "$basetexturetransform" "center .5 .5 scale 3.6 3.6 rotate 0 translate 0 0"
+      "$basetexturetransform" "center .5 .5 scale 1.8 1.8 rotate 0 translate 0 0"
+
+	Proxies {
+		PlayerSpeed {
+			scale "0.6"
+			resultVar $speed
+		}
+		Clamp {
+			min 0
+			max 499
+			srcVar1 $speed
+			resultVar $frame
+		}
+	}
+}
