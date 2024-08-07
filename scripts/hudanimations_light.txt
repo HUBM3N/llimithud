@@ -47,7 +47,7 @@ event HudLowAmmoPulseStop
 //=====================================================================================================================
 event HudMedicCharged
 {
-	Animate			ChargeLabel						FgColor		"Main"					Linear		0.0		0.0
+	//Animate			ChargeLabel						FgColor		"Main"					Linear		0.0		0.0
 
 	RunEvent		HudMedicChargedLoop				0.6
 }
@@ -70,74 +70,74 @@ event HudTournamentSetupPanelClose
 //=====================================================================================================================
 event FlagOutline
 {
-	RunEvent		FlagOutlineHide					0.0
+	//RunEvent		FlagOutlineHide					0.0
 
-	Animate			OutlineImage					Alpha		"255"					Linear		0.1		0.2
+	//Animate			OutlineImage					Alpha		"255"					Linear		0.1		0.2
 
-	Animate			OutlineImage					Position	"c-14 r70"				Linear		0.1		0.2
-	Animate			OutlineImage					Size		"28 28"					Linear		0.1		0.2
+	/Animate			OutlineImage					Position	"c-14 r70"				Linear		0.1		0.2
+	//Animate			OutlineImage					Size		"28 28"					Linear		0.1		0.2
 
-	Animate			OutlineImage					Position	"c-5 r0"				Linear		0.7		0.2
-	Animate			OutlineImage					Size		"10 10"					Linear		0.7		0.2
+	//Animate			OutlineImage					Position	"c-5 r0"				Linear		0.7		0.2
+	//Animate			OutlineImage					Size		"10 10"					Linear		0.7		0.2
 
-	Animate			OutlineImage					Alpha		"0"						Linear		0.9		0.1
+	//Animate			OutlineImage					Alpha		"0"						Linear		0.9		0.1
 }
 //=====================================================================================================================
 event ActiveTimerBGPulse
 {
-	Animate			ActiveTimerBG					Alpha		"255"					Linear		0.0		0.0
+	//Animate			ActiveTimerBG					Alpha		"255"					Linear		0.0		0.0
 }
 event ActiveTimerHighlight
 {
-	Animate			TimePanelValue					FgColor		"Main"					Linear		0.0		0.0
+	//Animate			TimePanelValue					FgColor		"Main"					Linear		0.0		0.0
 }
 event ActiveTimerDim
 {
-	Animate			TimePanelValue					FgColor		"White"					Linear		0.0		0.0
+	//Animate			TimePanelValue					FgColor		"White"					Linear		0.0		0.0
 }
 //=====================================================================================================================
 event SurveyShowSequence
 {
-	RunEventChild	Survey	SurveyDelete	0.1
+	//RunEventChild	Survey	SurveyDelete	0.1
 }
 //=====================================================================================================================
 event HintMessageShow
 {
-	Animate			HudHintDisplay					HintSize	"1"						Deaccel		0.0		0.3
-	Animate			HudHintDisplay					HintSize	"0"						Deaccel		10.2	0.3
+	//Animate			HudHintDisplay					HintSize	"1"						Deaccel		0.0		0.3
+	//Animate			HudHintDisplay					HintSize	"0"						Deaccel		10.2	0.3
 }
 event HintMessageHide
 {
-	Animate			HudHintDisplay					HintSize	"0"						Deaccel		0.2		0.3
+	//Animate			HudHintDisplay					HintSize	"0"						Deaccel		0.2		0.3
 }
 event KeyHintMessageShow
 {
-	Animate			HudHintKeyDisplay				Alpha		"255"					Linear		0.0		0.5
-	Animate			HudHintKeyDisplay				Alpha		"0"						Linear		12.0	1.0
+	//Animate			HudHintKeyDisplay				Alpha		"255"					Linear		0.0		0.5
+	//Animate			HudHintKeyDisplay				Alpha		"0"						Linear		12.0	1.0
 }
 event KeyHintMessageHide
 {
-	Animate			HudHintKeyDisplay				Alpha		"0"						Linear		0.0		0.5
+	//Animate			HudHintKeyDisplay				Alpha		"0"						Linear		0.0		0.5
 }
 //=====================================================================================================================
 event HudTournament_ShowTimerCompetitive
 {
-	Animate			CountdownLabel					ypos		"100"					Linear		0		0
-	Animate			CountdownLabelShadow			ypos		"100"					Linear		0		0
+	//Animate			CountdownLabel					ypos		"100"					Linear		0		0
+	//Animate			CountdownLabelShadow			ypos		"100"					Linear		0		0
 
-	SetVisible		CountdownBG						1	0
-	SetVisible		CountdownLabel					1	0
-	SetVisible		CountdownLabelShadow			1	0
+	//SetVisible		CountdownBG						1	0
+	//SetVisible		CountdownLabel					1	0
+	//SetVisible		CountdownLabelShadow			1	0
 }
 
 event HudTournament_ShowTimerDefault
 {
-	Animate			CountdownLabel					ypos		"100"					Linear		0		0
-	Animate			CountdownLabelShadow			ypos		"100"					Linear		0		0
+	//Animate			CountdownLabel					ypos		"100"					Linear		0		0
+	//Animate			CountdownLabelShadow			ypos		"100"					Linear		0		0
 
-	SetVisible		CountdownBG						1	0
-	SetVisible		CountdownLabel					1	0
-	SetVisible		CountdownLabelShadow			1	0
+	//SetVisible		CountdownBG						1	0
+	//SetVisible		CountdownLabel					1	0
+	//SetVisible		CountdownLabelShadow			1	0
 }
 //=====================================================================================================================
 event ScopeRemoval
